@@ -19,9 +19,9 @@ To run the project:
 
 #### Linux
 ```
-1. sudo apt-get install nodejs
-2. sudo apt-get install npm
-3. sudo apt-get install mongodb
+  1. sudo apt-get install nodejs
+  2. sudo apt-get install npm
+  3. sudo apt-get install mongodb
 
 ```
 
@@ -29,23 +29,48 @@ To run the project:
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Server Paths (/Routes)
+### /users
+This the general route to all User related paths , servers also as a way to get all users form the database.
+  ##### Paramaters (POST):
+  email
+  
+  password
+  
+  firstName
+  
+  lastName
+  
+  phoneNumber
+  
+  address:{
+            country, city, street, houseNumber
+           }
+           
+* P.S : * if the Resquest is **POST** then it's a SignUp route if **GET** then it views all users in the database
+        * all the upcoming user related routes starts with /users:
+  
+  #### Login (/login):
+  This is the basic Login (POST) Request 
+     ##### Parameters:
+     email: user email.
+     
+     password: user password.
+  
+     
+  #### fetch (/fetch):
+  this is a GET request to get a certain user
+     ##### Parameters:
+     Header: authorization
+  
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Missaoui Mounir** - *Initial work* - [BlastillROID](https://github.com/BlastillROID)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
