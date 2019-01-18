@@ -69,7 +69,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 * **Missaoui Mounir** - *Initial work* - [BlastillROID](https://github.com/BlastillROID)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/BlastillROID/InscryptBack/contributors) who participated in this project.
 
 ## License
 
