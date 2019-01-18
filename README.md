@@ -75,3 +75,7 @@ See also the list of [contributors](https://github.com/BlastillROID/InscryptBack
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## What's next
+
+Documenting the rest of the routes and debugging the codes including the blockchain Business logic
