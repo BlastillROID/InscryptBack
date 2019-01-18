@@ -27,42 +27,39 @@ To run the project:
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Server Image available at : [Live Inscrypt Server Link](http://ec2-3-84-159-10.compute-1.amazonaws.com:4000/)
 
 ## Server Paths (/Routes)
-### /users
+
+### Users (/users):
 This the general route to all User related paths , servers also as a way to get all users form the database.
-  ##### Paramaters (POST):
-  email
-  
-  password
-  
-  firstName
-  
-  lastName
-  
-  phoneNumber
-  
-  address:{
-            country, city, street, houseNumber
-           }
-           
+* **Paramaters (POST):**
+  - email
+  - password
+  - firstName
+  - lastName
+  - phoneNumber
+  - address:{
+    - country,
+    - city, 
+    - street,
+    - houseNumber
+    }
+
 * P.S : * if the Resquest is **POST** then it's a SignUp route if **GET** then it views all users in the database
         * all the upcoming user related routes starts with /users:
   
-  #### Login (/login):
-  This is the basic Login (POST) Request 
-     ##### Parameters:
-     email: user email.
-     
-     password: user password.
-  
-     
-  #### fetch (/fetch):
-  this is a GET request to get a certain user
-     ##### Parameters:
-     Header: authorization
-  
+#### Login (/users/login):
+   This is the basic Login (POST) Request 
+* **Parameters:**
+    - email: user email.
+    - password: user password.
+
+#### fetch (/users/fetch):
+   This is a GET request to get a certain user
+* **Parameters:**
+    - Header: authorization
+
 
 ## Versioning
 
