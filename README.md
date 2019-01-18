@@ -14,6 +14,7 @@ To run the project:
 1. Node.js
 2. Node Package Manager (npm)
 3. Mongodb
+4. Postman for testing Requests
 
 ### Installing
 
