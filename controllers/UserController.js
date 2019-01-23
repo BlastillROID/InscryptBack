@@ -132,6 +132,7 @@ exports.login2 = async (req, res) => {
     var verified;
     await authService.authUser(body.email, body.password).then((usr) => {
         user = usr;
+        console.log(user);
         var base32secret = user.secret.base32;
         verified = speakeasy.totp.verify({
             secret: base32secret,
@@ -143,7 +144,7 @@ exports.login2 = async (req, res) => {
     )
     if (!verified)
         res.status(403).send('Unauthorized');
-    else res.status(200).send({ 'user': user.toWeb(), 'token': user.getJWT() });
+    else res.status(200).send({'user': user.toWeb(), 'token': user.getJWT() });
 
 
 };
