@@ -143,7 +143,7 @@ exports.login2 = async (req, res) => {
         (err) => { console.log(err); res.status(403).send(err) }
     )
     if (!verified)
-        res.status(403).send('Unauthorized');
+        res.status(403).send('Unauthorized ya tfol');
     else res.status(200).send({'user': user.toWeb(), 'token': user.getJWT() });
 
 
